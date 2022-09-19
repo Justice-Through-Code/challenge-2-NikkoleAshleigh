@@ -18,13 +18,13 @@ def print_ingredients():  # Ways to work with strings/printing
     # # 1.2 Using one print statement, use string concatenation to print the ingredients
     # # as a single string (make sure to add a space between each ingredient!)
     
-    print(ingredient_1 + '  ' + ingredient_2 + '  ' + ingredient_3 + '  ' + ingredient_4)
+    print(ingredient_1 + ' ' + ingredient_2 + ' ' + ingredient_3 + ' ' + ingredient_4)
 
     # 1.3 Using one print statement, use an f-string to print the ingredients
     # as a single string (make sure to add a space between each ingredient!)
 
     print(f'{ingredient_1} {ingredient_2} {ingredient_3} {ingredient_4}')
-# print_ingredients()
+
 
 def confirm_ingredients():  # String methods
     # 2.1 Save the f-string you wrote above into a variable called `ingredients`.
@@ -57,7 +57,6 @@ def confirm_ingredients():  # String methods
 
     print(ingredients.upper())
 
-confirm_ingredients() 
 
 def favorite_bake():  # User Input/Type conversion
     # The beauty of these ingredients is that you can make tons with them. 
@@ -76,7 +75,6 @@ def favorite_bake():  # User Input/Type conversion
     # When the user inputs a number, what data type is it saved as?
     # 3.3 Print out the _type_ of the `frequency` variable to check.
 
-    print(frequency)
     print(type(frequency))
 
     # 3.4 Uncomment the print statements below, and get them to run WITHOUT changing the content--
@@ -85,5 +83,6 @@ def favorite_bake():  # User Input/Type conversion
     # Use `type conversion` to fix the second one
     
     print(f'Ooooh, {baked_good}s are delicious!')
-    print(f'We recommend you eat {baked_good}s at least {frequency * 2} times a month!')
+    print(f'We recommend you eat {baked_good}s at least {int(frequency) * 2} times a month!')
+    
 favorite_bake()
